@@ -4,7 +4,7 @@ import webpack from 'webpack';
 
 export = {
   overrideCracoConfig: ({ cracoConfig, pluginOptions, context: { env, paths } }) => {
-    cracoConfig.wepback = {
+    cracoConfig.webpack = {
       alias: {
         '@': path.join(dirname, 'src')
       },
@@ -16,7 +16,6 @@ export = {
         })
       ]
     };
-
     return cracoConfig;
   }
 };

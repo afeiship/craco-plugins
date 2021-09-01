@@ -5,6 +5,7 @@ const defaults = {
   writeToDisk: false,
   filename: '.craco-plugin-debug.log'
 };
+
 export = {
   overrideCracoConfig: ({ cracoConfig, pluginOptions, context: { env, paths } }) => {
     const target = JSON.stringify(cracoConfig, null, 2);

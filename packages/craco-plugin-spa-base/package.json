@@ -38,6 +38,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
+    "@jswork/next": "^1.0.9",
     "app-root-path": "^3.0.0",
     "webpack": "4"
   }
