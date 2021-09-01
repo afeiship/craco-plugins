@@ -16,5 +16,10 @@
     "lerna:bootstrap": "lerna bootstrap",
     "build": "lerna run build --since master --no-private",
     "publish": "npm run build && lerna publish --no-private"
-  }
+  },
+  "keywords": [
+    "craco",
+    "plugin",
+    "jswork"
+  ]
 }
