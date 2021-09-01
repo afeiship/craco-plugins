@@ -8,10 +8,10 @@ const defaults = {
 export = {
   overrideCracoConfig: ({ cracoConfig, pluginOptions, context: { env, paths } }) => {
     const target = JSON.stringify(cracoConfig, null, 2);
-    const options = Object.assign({}, defaults, pluginOptions);
+    const opts = Object.assign({}, defaults, pluginOptions);
 
-    if (pluginOptions.writeToDisk) {
-      fs.writeFileSync(options.filename, target);
+    if (opts.writeToDisk) {
+      fs.writeFileSync(opts.filename, target);
     }
 
     log(target);
