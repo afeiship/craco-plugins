@@ -11,6 +11,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/app-root-path": "^1.2.4",
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-typescript": "^7.13.0",
@@ -37,7 +38,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@types/app-root-path": "^1.2.4",
+    "app-root-path": "^3.0.0",
     "webpack": "4"
   }
 }
