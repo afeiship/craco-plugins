@@ -1,29 +1,20 @@
 {
-  "name": "next-route",
-  "version": "0.0.0",
-  "description": "A mini route location service based on next.",
-  "homepage": "https://github.com/afeiship/next-route",
-  "author": {
-    "name": "afei",
-    "email": "1290657123@qq.com"
+  "name": "@jswork/craco-plugins",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
   },
   "scripts": {
-    "build": "gulp"
-  },
-  "main": "dist/next-route.js",
-  "license": "MIT",
-  "devDependencies": {
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-size": "^2.1.0",
-    "gulp-uglify": "^2.1.2",
-    "yargs": "^4.7.1"
-  },
-  "dependencies": {
-    "next-js-core2": "github:afeiship/next-js-core2"
+    "start": "yarn --cwd packages/websites start",
+    "lerna:clean": "lerna clean",
+    "lerna:list": "lerna list",
+    "lerna:bootstrap": "lerna bootstrap",
+    "build": "lerna run build --since master --no-private",
+    "publish": "npm run build && lerna publish --no-private"
   }
 }
