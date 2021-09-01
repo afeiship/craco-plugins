@@ -1228,12 +1228,19 @@
     dateformat "^3.0.3"
     gulp-header "^2.0.9"
 
+"@jswork/next-log@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@jswork/next-log/-/next-log-1.0.0.tgz#91dd5c5a4a75ebf1c56fc3ac3333bfdff7f76537"
+  integrity sha512-u4QtsOYqG72XE7a/89NT6QVV+p0IelLKlupkn0iZ4BxTX0OIOIKpVcD9ZWjTuqqtkWJtvQlRWLtMHX7uqo6idg==
+  dependencies:
+    fancy-log "^1.3.3"
+
 "@jswork/next-nice-comments@^1.0.1":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@jswork/next-nice-comments/-/next-nice-comments-1.0.3.tgz#263dca252e6eb7a0030dbad50da69582391f5c16"
   integrity sha512-hoPR2BZidm/1JoWdNg7WfAHXshN04kALO35e5Q5PykeEueyS5aNKYbjqg2MHC9Yz19XXWfWEn/JyA+MgJSHq7g==
 
-"@jswork/next@^1.0.0":
+"@jswork/next@^1.0.0", "@jswork/next@^1.0.9":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@jswork/next/-/next-1.0.9.tgz#8099e2699bd5f76a07dbcfcf2fee4a43298860f5"
   integrity sha512-bQxwIEj1zkJTW4yknbE2LZn0QsiBV2EsWMyMzhrfuL6OO18iG+AB9LRfrF3Mobk71nM7V2nc7XjvjVMRLh3FFQ==
@@ -4991,7 +4998,7 @@ extsprintf@^1.2.0:
   resolved "https://registry.npm.taobao.org/extsprintf/download/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
-fancy-log@^1.1.0, fancy-log@^1.2.0, fancy-log@^1.3.2:
+fancy-log@^1.1.0, fancy-log@^1.2.0, fancy-log@^1.3.2, fancy-log@^1.3.3:
   version "1.3.3"
   resolved "https://registry.npm.taobao.org/fancy-log/download/fancy-log-1.3.3.tgz#dbc19154f558690150a23953a0adbd035be45fc7"
   integrity sha1-28GRVPVYaQFQojlToK29A1vkX8c=
