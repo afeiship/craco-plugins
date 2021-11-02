@@ -1,6 +1,3 @@
-import { path as dirname } from 'app-root-path';
-import path from 'path';
-import webpack from 'webpack';
 import HtmlBannerWebpackPlugin from '@jswork/html-banner-webpack-plugin';
 
 export = {
