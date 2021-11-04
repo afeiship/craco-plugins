@@ -38,6 +38,8 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@jswork/html-banner-webpack-plugin": "^1.0.0"
+    "@jswork/html-banner-webpack-plugin": "^1.0.0",
+    "@jswork/next": "^1.0.9",
+    "@jswork/next-absolute-package": "^1.0.1"
   }
 }

@@ -1237,6 +1237,13 @@
     "@jswork/next-nice-comments" "^1.0.3"
     "@jswork/next-npm-installed" "^1.0.0"
 
+"@jswork/next-absolute-package@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@jswork/next-absolute-package/-/next-absolute-package-1.0.1.tgz#bd17a375f838b9fcabe7ba4c1a668da71dc3e360"
+  integrity sha512-5YJuJ+xG0xjeIgVqrK5XzzNeEmt8vNKbWTirG20h22rRf9gSTvDDe3oVO+1Op7fDDhfrg/j36/Ar5MpybEMpnw==
+  dependencies:
+    app-root-path "^3.0.0"
+
 "@jswork/next-log@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@jswork/next-log/-/next-log-1.0.0.tgz#91dd5c5a4a75ebf1c56fc3ac3333bfdff7f76537"
