@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-plugin-banner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Carco plugin for banner.",
   "main": "dist/cjs/index.js",
   "module": "dist/cjs/index.js",
