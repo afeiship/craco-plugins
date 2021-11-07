@@ -2,7 +2,10 @@ import OfflinePlugin from 'offline-plugin';
 
 export = {
   overrideCracoConfig: ({ cracoConfig, pluginOptions, context: { env, paths } }) => {
-    if (env !== 'production') return cracoConfig;
+    const { debug, ...options } = pluginOptions;
+    const ifeWorked = debug || env === 'production';
+
+    if (!ifeWorked) return cracoConfig;
 
     cracoConfig.webpack.plugins.push(
       new OfflinePlugin(
@@ -13,7 +16,7 @@ export = {
               events: true
             }
           },
-          pluginOptions
+          options
         )
       )
     );
