@@ -5629,6 +5629,18 @@ glob@^7.0.0, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
+glob@^7.1.7:
+  version "7.2.0"
+  resolved "https://registry.npmmirror.com/glob/download/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
+  integrity sha1-0VU1r3cy4C6Uj0xBYovZECk/YCM=
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.4"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
 glob@~3.1.21:
   version "3.1.21"
   resolved "https://registry.nlark.com/glob/download/glob-3.1.21.tgz?cache=0&sync_timestamp=1620337382269&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fglob%2Fdownload%2Fglob-3.1.21.tgz#d29e0a055dea5138f4d07ed40e8982e83c2066cd"
@@ -5956,7 +5968,7 @@ gzip-size@^4.1.0:
     duplexer "^0.1.1"
     pify "^3.0.0"
 
-handlebars@^4.7.6:
+handlebars@^4.7.6, handlebars@^4.7.7:
   version "4.7.7"
   resolved "https://registry.nlark.com/handlebars/download/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
   integrity sha1-nOM0FqrQLb1sj6+oJA1dmABJRaE=
@@ -7458,6 +7470,11 @@ json5@^2.1.2:
   dependencies:
     minimist "^1.2.5"
 
+jsonc-parser@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.nlark.com/jsonc-parser/download/jsonc-parser-3.0.0.tgz#abdd785701c7e7eaca8a9ec8cf070ca51a745a22"
+  integrity sha1-q914VwHH5+rKip7IzwcMpRp0WiI=
+
 jsonfile@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npm.taobao.org/jsonfile/download/jsonfile-4.0.0.tgz?cache=0&sync_timestamp=1604161917513&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjsonfile%2Fdownload%2Fjsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
@@ -7913,6 +7930,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+lunr@^2.3.9:
+  version "2.3.9"
+  resolved "https://registry.npm.taobao.org/lunr/download/lunr-2.3.9.tgz#18b123142832337dd6e964df1a5a7707b25d35e1"
+  integrity sha1-GLEjFCgyM33W6WTfGlp3B7JdNeE=
+
 macos-release@^2.2.0, macos-release@^2.5.0:
   version "2.5.0"
   resolved "https://registry.nlark.com/macos-release/download/macos-release-2.5.0.tgz#067c2c88b5f3fb3c56a375b2ec93826220fa1ff2"
@@ -8014,6 +8036,11 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
+
+marked@^3.0.2:
+  version "3.0.8"
+  resolved "https://registry.npmmirror.com/marked/download/marked-3.0.8.tgz?cache=0&sync_timestamp=1635866159488&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fmarked%2Fdownload%2Fmarked-3.0.8.tgz#2785f0dc79cbdc6034be4bb4f0f0a396bd3f8aeb"
+  integrity sha1-J4Xw3HnL3GA0vku08PCjlr0/ius=
 
 matchdep@^2.0.0:
   version "2.0.0"
@@ -8204,7 +8231,7 @@ minimatch@^2.0.1:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimatch@^3.0.3, minimatch@^3.0.4:
+minimatch@^3.0.0, minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npm.taobao.org/minimatch/download/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha1-UWbihkV/AzBgZL5Ul+jbsMPTIIM=
@@ -8798,6 +8825,13 @@ onetime@^5.1.0, onetime@^5.1.2:
   dependencies:
     mimic-fn "^2.1.0"
 
+onigasm@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.npm.taobao.org/onigasm/download/onigasm-2.2.5.tgz#cc4d2a79a0fa0b64caec1f4c7ea367585a676892"
+  integrity sha1-zE0qeaD6C2TK7B9MfqNnWFpnaJI=
+  dependencies:
+    lru-cache "^5.1.1"
+
 open@7.4.2:
   version "7.4.2"
   resolved "https://registry.nlark.com/open/download/open-7.4.2.tgz#b8147e26dcf3e426316c730089fd71edd29c2321"
@@ -9339,6 +9373,11 @@ process@^0.11.10:
   version "0.11.10"
   resolved "https://registry.nlark.com/process/download/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
+
+progress@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npm.taobao.org/progress/download/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
+  integrity sha1-foz42PW48jnBvGi+tOt4Vn1XLvg=
 
 promise-inflight@^1.0.1:
   version "1.0.1"
@@ -10278,6 +10317,15 @@ shellwords@^0.1.1:
   resolved "https://registry.npm.taobao.org/shellwords/download/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha1-1rkYHBpI05cyTISHHvvPxz/AZUs=
 
+shiki@^0.9.8:
+  version "0.9.12"
+  resolved "https://registry.npmmirror.com/shiki/download/shiki-0.9.12.tgz#70cbc8c1bb78ff7b356f84a7eecdb040efddd247"
+  integrity sha1-cMvIwbt4/3s1b4Sn7s2wQO/d0kc=
+  dependencies:
+    jsonc-parser "^3.0.0"
+    onigasm "^2.2.5"
+    vscode-textmate "5.2.0"
+
 side-channel@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npm.taobao.org/side-channel/download/side-channel-1.0.4.tgz#efce5c8fdc104ee751b25c58d4290011fa5ea2cf"
@@ -11187,6 +11235,25 @@ typedarray@^0.0.6:
   resolved "https://registry.nlark.com/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typedoc-default-themes@^0.12.10:
+  version "0.12.10"
+  resolved "https://registry.npm.taobao.org/typedoc-default-themes/download/typedoc-default-themes-0.12.10.tgz#614c4222fe642657f37693ea62cad4dafeddf843"
+  integrity sha1-YUxCIv5kJlfzdpPqYsrU2v7d+EM=
+
+typedoc@^0.21.9:
+  version "0.21.9"
+  resolved "https://registry.npmmirror.com/typedoc/download/typedoc-0.21.9.tgz#6fbdc7152024a00f03af53a0ca40f44e91f0f129"
+  integrity sha1-b73HFSAkoA8Dr1OgykD0TpHw8Sk=
+  dependencies:
+    glob "^7.1.7"
+    handlebars "^4.7.7"
+    lunr "^2.3.9"
+    marked "^3.0.2"
+    minimatch "^3.0.0"
+    progress "^2.0.3"
+    shiki "^0.9.8"
+    typedoc-default-themes "^0.12.10"
+
 typescript@^4.1.3:
   version "4.4.2"
   resolved "https://registry.nlark.com/typescript/download/typescript-4.4.2.tgz#6d618640d430e3569a1dfb44f7d7e600ced3ee86"
@@ -11565,6 +11632,11 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
+
+vscode-textmate@5.2.0:
+  version "5.2.0"
+  resolved "https://registry.npmmirror.com/vscode-textmate/download/vscode-textmate-5.2.0.tgz#01f01760a391e8222fe4f33fbccbd1ad71aed74e"
+  integrity sha1-AfAXYKOR6CIv5PM/vMvRrXGu104=
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"
