@@ -40,6 +40,7 @@
   "dependencies": {
     "@jswork/next": "^1.0.9",
     "app-root-path": "^3.0.0",
-    "webpack": "4"
+    "webpack": "4",
+    "webpack-merge": "^5.8.0"
   }
 }
