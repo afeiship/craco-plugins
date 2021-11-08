@@ -15,7 +15,29 @@ npm install @jswork/craco-plugin-environment
 ```js
 import cracoPluginEnvironment from '@jswork/craco-plugin-environment';
 
-// usage goes here.
+// global.d.ts
+declare global {
+  const APP_VARS: any;
+}
+
+// eslintrc.js
+"globals": {
+  "APP_VARS": true
+}
+
+// craco.config.js
+{
+  plugin: cracoPluginEnvironment,
+  options: {
+    vars: {
+      BUILD_DATETIME: new Date().toLocaleString('en-US', {
+        hour12: false,
+        timeZone: 'Asia/ShangHai',
+      }),
+      BUILD_VERSION: pkg.version,
+    },
+  },
+}
 ```
 
 ## license

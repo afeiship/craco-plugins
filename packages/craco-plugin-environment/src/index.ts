@@ -1,10 +1,6 @@
 import webpack from 'webpack';
 import nx from '@jswork/next';
 
-declare global {
-  const APP_VARS: any;
-}
-
 const defaults = {
   globalKey: 'APP_VARS',
   vars: {}
