@@ -2,7 +2,7 @@ import webpack from 'webpack';
 import nx from '@jswork/next';
 
 const defaults = {
-  globalKey: '__CRACO_VARS__',
+  globalKey: 'APP_VARS',
   vars: {}
 };
 
@@ -10,9 +10,10 @@ export = {
   overrideCracoConfig: ({ cracoConfig, pluginOptions, context: { env, paths } }) => {
     const opts = nx.mix(null, defaults, pluginOptions);
     const { globalKey, vars } = opts;
-    nx.set(nx.GLOBAL, globalKey, vars);
+
     cracoConfig.webpack.plugins.push(
-      new webpack.EnvironmentPlugin(vars)
+      new webpack.default.EnvironmentPlugin(vars),
+      new webpack.default.DefinePlugin({ [globalKey]: JSON.stringify(vars) }),
     );
     return cracoConfig;
   }
