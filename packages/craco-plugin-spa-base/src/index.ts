@@ -18,7 +18,7 @@ export = {
       ]
     };
 
-    merge(cracoConfig.webpack, config);
+    cracoConfig.webpack = merge(cracoConfig.webpack || {}, config);
     return cracoConfig;
   }
 };
