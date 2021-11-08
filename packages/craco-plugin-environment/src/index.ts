@@ -16,9 +16,10 @@ export = {
     const { globalKey, vars } = opts;
 
     cracoConfig.webpack.plugins.push(
-      new webpack.default.EnvironmentPlugin(vars),
-      new webpack.default.DefinePlugin({ [globalKey]: JSON.stringify(vars) }),
+      new webpack.EnvironmentPlugin(vars),
+      new webpack.DefinePlugin({ [globalKey]: JSON.stringify(vars) }),
     );
+
     return cracoConfig;
   }
 };
