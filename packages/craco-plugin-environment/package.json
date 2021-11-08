@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-plugin-environment",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Craco plugin for env.",
   "main": "dist/cjs/index.js",
   "module": "dist/cjs/index.js",
