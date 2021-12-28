@@ -15,7 +15,12 @@ npm install @jswork/craco-plugin-debug
 ```js
 import cracoPluginDebug from '@jswork/craco-plugin-debug';
 
-// usage goes here.
+// craco.config.js
+module.exports = {
+    plugins: [
+        { plugin: cracoPluginDebug , options: { filename: 'debug.log'} }
+    ]
+}
 ```
 
 ## license
