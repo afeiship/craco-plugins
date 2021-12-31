@@ -11,7 +11,7 @@ export = {
     context: { env, paths }
   }) => {
     const cwd = process.cwd();
-    const { names, path } = pluginOptions;
+    const { names, path, inject } = pluginOptions;
     const dllRefs = names.map((name) => {
       const json = resolve(cwd, path, `${name}-manifest.json`);
       return new webpack.DllReferencePlugin({
@@ -19,14 +19,18 @@ export = {
       });
     });
 
-    webpackConfig.plugins = [...webpackConfig.plugins].concat(
-      ...dllRefs,
-      new AddAssetHtmlPlugin({
-        filepath: resolve(cwd, `./${path}/*.js`),
-        publicPath: './static/libs',
-        outputPath: './static/libs'
-      })
-    );
+    const theInject = inject
+      ? new AddAssetHtmlPlugin({
+          filepath: resolve(cwd, `./${path}/*.js`),
+          publicPath: './static/libs',
+          outputPath: './static/libs'
+        })
+      : null;
+
+    webpackConfig.plugins = [...webpackConfig.plugins]
+      .concat(...dllRefs, theInject)
+      .filter(Boolean);
+
     return webpackConfig;
   }
 };
