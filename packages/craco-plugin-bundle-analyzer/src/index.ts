@@ -8,8 +8,8 @@ export = {
     pluginOptions,
     context: { env, paths }
   }) => {
-    const target =
-      process.env.BUNDLE_ANALYZER === 'true' ? new BundleAnalyzerPlugin(pluginOptions) : [];
+    const shouldAnalyzer = process.env.BUNDLE_ANALYZER === 'true';
+    const target = shouldAnalyzer ? new BundleAnalyzerPlugin(pluginOptions) : [];
     webpackConfig.plugins = webpackConfig.plugins.concat(target);
     return webpackConfig;
   }
