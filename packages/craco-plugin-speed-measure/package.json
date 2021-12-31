@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-plugin-speed-measure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Craco plugin for `speed-measure-webpack-plugin`.",
   "main": "dist/cjs/index.js",
   "module": "dist/cjs/index.js",
