@@ -3,6 +3,12 @@ import webpack from 'webpack';
 import AddAssetHtmlPlugin from 'add-asset-html-webpack-plugin';
 import * as process from 'process';
 
+const defaults = {
+  path: 'src/assets/libs',
+  names: ['vendors'],
+  inject: true
+};
+
 export = {
   overrideWebpackConfig: ({
     webpackConfig,
@@ -11,7 +17,8 @@ export = {
     context: { env, paths }
   }) => {
     const cwd = process.cwd();
-    const { names, path, inject } = pluginOptions;
+    const options = { ...defaults, ...pluginOptions };
+    const { names, path, inject } = options;
     const dllRefs = names.map((name) => {
       const json = resolve(cwd, path, `${name}-manifest.json`);
       return new webpack.DllReferencePlugin({
