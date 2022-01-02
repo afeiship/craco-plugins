@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-plugin-dll-refs-sass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Craco plugin for sass references.",
   "main": "dist/cjs/index.js",
   "module": "dist/cjs/index.js",
