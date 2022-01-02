@@ -4,7 +4,7 @@ import AddAssetHtmlPlugin from 'add-asset-html-webpack-plugin';
 import * as process from 'process';
 
 const defaults = {
-  path: 'src/assets/libs',
+  path: 'src/assets/libs/js',
   names: ['vendors'],
   inject: true
 };
@@ -29,8 +29,8 @@ export = {
     const theInject = inject
       ? new AddAssetHtmlPlugin({
           filepath: resolve(cwd, `./${path}/*.js`),
-          publicPath: './static/libs',
-          outputPath: './static/libs'
+          publicPath: './static/libs/js',
+          outputPath: './static/libs/js'
         })
       : null;
 
