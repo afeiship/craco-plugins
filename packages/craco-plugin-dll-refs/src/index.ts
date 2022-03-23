@@ -17,22 +17,26 @@ export = {
   }) => {
     const cwd = process.cwd();
     const options = { ...defaults, ...pluginOptions };
-    const { names, path, inject } = options;
+    const { names, path } = options;
     const dllRefs = names.map((name) => {
       const json = resolve(cwd, path, `${name}-manifest.json`);
       return new webpack.DllReferencePlugin({
         manifest: require(json)
       });
     });
+    const isProd = env === 'production';
+    const prodPlugins = isProd
+      ? [
+          ...dllRefs,
+          new AddAssetHtmlPlugin({
+            filepath: resolve(cwd, `./${path}/*.js`),
+            publicPath: './static/libs/js',
+            outputPath: './static/libs/js'
+          })
+        ]
+      : [null];
 
-    webpackConfig.plugins = [
-      ...webpackConfig.plugins,
-      new AddAssetHtmlPlugin({
-        filepath: resolve(cwd, `./${path}/*.js`),
-        publicPath: './static/libs/js',
-        outputPath: './static/libs/js'
-      })
-    ];
+    webpackConfig.plugins = [...webpackConfig.plugins, ...prodPlugins].filter(Boolean);
     return webpackConfig;
   }
 };
