@@ -5,8 +5,7 @@ import * as process from 'process';
 
 const defaults = {
   path: 'src/assets/libs/js',
-  names: ['vendors'],
-  inject: true
+  names: ['vendors']
 };
 
 export = {
@@ -26,18 +25,14 @@ export = {
       });
     });
 
-    const theInject = inject
-      ? new AddAssetHtmlPlugin({
-          filepath: resolve(cwd, `./${path}/*.js`),
-          publicPath: './static/libs/js',
-          outputPath: './static/libs/js'
-        })
-      : null;
-
-    webpackConfig.plugins = [...webpackConfig.plugins]
-      .concat(...dllRefs, theInject)
-      .filter(Boolean);
-
+    webpackConfig.plugins = [
+      ...webpackConfig.plugins,
+      new AddAssetHtmlPlugin({
+        filepath: resolve(cwd, `./${path}/*.js`),
+        publicPath: './static/libs/js',
+        outputPath: './static/libs/js'
+      })
+    ];
     return webpackConfig;
   }
 };
