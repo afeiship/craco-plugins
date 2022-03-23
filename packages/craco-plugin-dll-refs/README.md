@@ -21,7 +21,7 @@ import cracoPluginDllRefs from '@jswork/craco-plugin-dll-refs';
 ## usage with hmr
 ```conf
 # 组合1: HRM + disabled dll-refs
-# 特点: 启动慢，但支持HMR，开发体验更好
+# 特点: 启动慢，但支持HMR，开发体验更好<默认为true,所以这个也不用写>
 FAST_REFRESH = true
 # craco.config.js<options: 默认可以不写>
 { plugin: dllRefs, options: {inject: false} }
