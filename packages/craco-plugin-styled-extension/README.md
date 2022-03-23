@@ -7,9 +7,26 @@
 [![download][download-image]][download-url]
 
 ## installation
+1. installed packages
 ```shell
 npm i styled-components color-alpha
 npm install @jswork/craco-plugin-styled-extension
+```
+2. .eslintrc
+```js
+  "globals": {
+    "styled": true,
+    "rgba": true,
+  }
+```
+3. src/global.d.ts
+```ts
+import { StyledInterface } from 'styled-components';
+
+declare global {
+  const rgba: any;
+  const styled: StyledInterface;
+}
 ```
 
 ## usage
