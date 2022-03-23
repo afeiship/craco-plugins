@@ -24,6 +24,7 @@ export = {
         manifest: require(json)
       });
     });
+    // 注意: 这里的 `webpack.DllReferencePlugin` 会导致 HMR 不生效，所以在 dev 环境下不使用
     const isProd = env === 'production';
     const prodPlugins = isProd
       ? [
