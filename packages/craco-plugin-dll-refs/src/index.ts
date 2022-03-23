@@ -5,7 +5,8 @@ import * as process from 'process';
 
 const defaults = {
   path: 'src/assets/libs/js',
-  names: ['vendors']
+  names: ['vendors'],
+  inject: false
 };
 
 export = {
@@ -25,7 +26,7 @@ export = {
       });
     });
     // 注意: 这里的 `webpack.DllReferencePlugin` 会导致 HMR 不生效，所以在 dev 环境下不使用
-    const isProd = env === 'production';
+    const isProd = options.inject || env === 'production';
     const prodPlugins = isProd
       ? [
           ...dllRefs,
