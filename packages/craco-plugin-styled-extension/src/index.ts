@@ -7,7 +7,9 @@ export = {
       plugins: [
         new webpack.ProvidePlugin({
           styled: ['styled-components', 'default'],
-          rgba: 'color-alpha'
+          rgba: ['@jswork/color-rgba', 'default'],
+          lighten: ['@jswork/color-lighten', 'default'],
+          darken: ['@jswork/color-darken', 'default']
         })
       ]
     };

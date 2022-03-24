@@ -9,7 +9,8 @@
 ## installation
 1. installed packages
 ```shell
-npm i styled-components color-alpha
+npm i styled-components
+npm i @jswork/color-rgba @jswork/color-lighten @jswork/color-darken
 npm install @jswork/craco-plugin-styled-extension
 ```
 2. .eslintrc
