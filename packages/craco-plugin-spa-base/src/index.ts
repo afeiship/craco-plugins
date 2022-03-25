@@ -13,6 +13,7 @@ export = {
         new webpack.ProvidePlugin({
           React: 'react',
           ReactDOM: 'react-dom',
+          cx: 'classnames',
           View: ['@jswork/styled-box', 'default']
         })
       ]
