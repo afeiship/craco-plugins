@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 
 export = {
-  overrideCracoConfig: ({ cracoConfig, pluginOptions, context: { env, paths } }) => {
+  overrideCracoConfig: ({ cracoConfig, _, context: { env, paths } }) => {
     const config = {
       plugins: [
         new webpack.ProvidePlugin({
