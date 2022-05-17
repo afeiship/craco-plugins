@@ -1,4 +1,3 @@
-import { path as dirname } from 'app-root-path';
 import path from 'path';
 import { merge } from 'webpack-merge';
 
@@ -12,7 +11,7 @@ export = {
     const oldConfig = webpackConfig.config;
     const newConfig = {
       alias: {
-        '@': path.join(dirname, 'src'),
+        '@': path.join(process.cwd(), 'src'),
         ...pluginOptions
       }
     };
