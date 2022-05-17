@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-plugin-styled-extension",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Some extensions for styled-components in cra.",
   "main": "dist/cjs/index.js",
   "module": "dist/cjs/index.js",
