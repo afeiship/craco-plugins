@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-plugin-styled-extension",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Some extensions for styled-components in cra.",
   "main": "dist/cjs/index.js",
   "module": "dist/cjs/index.js",
@@ -45,7 +45,7 @@
     "url": "https://github.com/afeiship/craco-plugin-styled-extension.git"
   },
   "dependencies": {
-    "webpack-merge": "^5.8.0",
-    "webpack": "4"
+    "webpack": "4",
+    "webpack-merge": "^5.8.0"
   }
 }

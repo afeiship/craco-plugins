@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-plugin-bundle-analyzer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Craco plugin for `webpack-bundle-analyzer`.",
   "main": "dist/cjs/index.js",
   "module": "dist/cjs/index.js",
@@ -45,7 +45,7 @@
     "url": "https://github.com/afeiship/craco-plugin-bundle-analyzer.git"
   },
   "dependencies": {
-    "webpack-bundle-analyzer": "^4.5.0",
-    "webpack": "4"
+    "webpack": "4",
+    "webpack-bundle-analyzer": "^4.5.0"
   }
 }

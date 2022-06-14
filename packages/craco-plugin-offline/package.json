@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-plugin-offline",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Craco plugin for sw.",
   "main": "dist/cjs/index.js",
   "module": "dist/cjs/index.js",
