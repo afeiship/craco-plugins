@@ -40,6 +40,7 @@
   "dependencies": {
     "@jswork/html-banner-webpack-plugin": "^1.0.0",
     "@jswork/next": "^1.0.9",
-    "@jswork/next-absolute-package": "^1.0.1"
+    "@jswork/next-absolute-package": "^1.0.1",
+    "webpack": "4"
   }
 }

@@ -38,6 +38,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "offline-plugin": "^5.0.7"
+    "offline-plugin": "^5.0.7",
+    "webpack": "4"
   }
 }

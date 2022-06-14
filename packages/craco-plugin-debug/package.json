@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@jswork/next": "^1.0.9",
-    "@jswork/next-log": "^1.0.0"
+    "@jswork/next-log": "^1.0.0",
+    "webpack": "4"
   }
 }
