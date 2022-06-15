@@ -1,6 +1,6 @@
 {
   "name": "@jswork/craco-plugin-spa-base",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Carco plugin for spa base.",
   "main": "dist/cjs/index.js",
   "typings": "dist/cjs/index.d.ts",
