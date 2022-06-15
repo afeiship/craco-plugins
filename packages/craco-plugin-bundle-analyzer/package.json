@@ -45,7 +45,6 @@
     "url": "https://github.com/afeiship/craco-plugin-bundle-analyzer.git"
   },
   "dependencies": {
-    "webpack": "4",
     "webpack-bundle-analyzer": "^4.5.0"
   }
 }

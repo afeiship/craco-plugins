@@ -45,7 +45,6 @@
     "url": "https://github.com/afeiship/craco-plugin-styled-extension.git"
   },
   "dependencies": {
-    "webpack": "4",
     "webpack-merge": "^5.8.0"
   }
 }
