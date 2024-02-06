@@ -15,6 +15,7 @@ const defPluginOptions = {
 export = {
   overrideCracoConfig: ({ cracoConfig, pluginOptions, context: { env, paths } }) => {
     const options = nx.mix(null, defPluginOptions, pluginOptions);
+    // set default options
     cracoConfig.webpack.plugins = cracoConfig.webpack.plugins || [];
     cracoConfig.webpack.plugins.push(new HtmlBannerWebpackPlugin(options));
     return cracoConfig;

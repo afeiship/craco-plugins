@@ -41,5 +41,6 @@
     "@jswork/html-banner-webpack-plugin": "^1.0.0",
     "@jswork/next": "^1.0.9",
     "@jswork/next-absolute-package": "^1.0.1"
-  }
+  },
+  "gitHead": "129ca330cc438e403c694ab7a1c9007c3d921bd8"
 }
